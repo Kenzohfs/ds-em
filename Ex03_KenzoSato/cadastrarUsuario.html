@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Cliente</title>
+</head>
+
+<body>
+    <header>
+        <h1>Food's Map</h1>
+        <nav>
+            <a href="./homepage.html">Página inicial</a>
+            <a href="./cadastrarProduto.html">Cadastrar Produto</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Cadastrar Usuário</h1>
+        <form>
+            <fieldset>
+                <legend><strong>Preencha as informações</strong></legend>
+                <br>
+                <label for="email">
+                    Email:
+                </label>
+                <br>
+                <input id="email" type="email" placeholder="example@gmail.com" required>
+                <br>
+                <label for="nome">
+                    Nome:
+                </label>
+                <br>
+                <input id="nome" type="text" placeholder="Nome Completo" required>
+                <br>
+                <label for="senha">
+                    Senha:
+                </label>
+                <br>
+                <input id="senha" type="password" placeholder="********" minlength="8" maxlength="20" required>
+                <br>
+                <label for="confsenha">
+                    Confirmar senha:
+                </label>
+                <br>
+                <input id="confsenha" type="password" placeholder="********" minlength="8" maxlength="20" required>
+                <br>
+                <br>
+                <input id="turno1" name="turno" type="radio" required>
+                <label for="turno1">Matutino</label>
+                <input id="turno2" name="turno" type="radio" required>
+                <label for="turno2">Vespertino</label>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Produto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Food's Map</h1>
+        <nav>
+            <a href="./homepage.html">Página inicial</a>
+            <a href="./cadastrarUsuario.html">Cadastrar Usuário</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Cadastrar Produto</h1>
+        <form>
+            <fieldset>
+                <legend><strong>Preencha as informações</strong></legend>
+                <br>
+                <label for="nome">
+                    Nome do Produto:
+                </label>
+                <br>
+                <input id="nome" type="text" placeholder="Nome..." required>
+                <br>
+                <label for="preco">
+                    Preço:
+                </label>
+                <br>
+                <input id="preco" type="number" placeholder="Ex: 99,90" required>
+                <br>
+                <label for="descricao">
+                    Descrição:
+                </label>
+                <br>
+                <input id="descricao" type="text" placeholder="Descrição...">
+                <br>
+                <br>
+                <input id="item1" type="checkbox">
+                <label for="item1">Disponível em dia útil</label>
+                <br>
+                <input id="item2" type="checkbox">
+                <label for="item2">Disponível finais de semana</label>
+                <br>
+                <br>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
