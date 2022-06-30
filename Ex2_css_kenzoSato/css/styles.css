@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100;300;400&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(241, 241, 241);
+    border-bottom: 1px solid black;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Arima', cursive;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Arima', cursive;
+}
+
+p {
+    font-family: 'Arima', cursive;
+    font-weight: 300;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(63, 63, 226);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: beige;
+}
