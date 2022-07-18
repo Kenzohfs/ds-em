@@ -1,0 +1,18 @@
+table, tr, th, td {
+    margin: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    padding: 5px;
+}
+
+table tr:nth-child(2n + 1) {
+    background-color: rgb(0, 180, 180);
+}
+
+table tr:nth-child(2n + 0) {
+    background-color: aqua;
+}
