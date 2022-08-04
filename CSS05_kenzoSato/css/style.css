@@ -1,3 +1,7 @@
+img {
+    width: 100px;
+}
+
 #p1 {
     background-color: antiquewhite;
     border: 1px solid black;
@@ -49,6 +53,7 @@
     color: red;
     font-family: 'Times New Roman', Times, serif;
     font-size: 17;
+    clear: left;
 }
 
 #img1 {
@@ -76,9 +81,9 @@
 }
 
 #img7 {
-    
+    float: left;
 }
 
 #img8 {
-    
+    float: right;
 }
