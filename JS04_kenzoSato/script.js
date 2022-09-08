@@ -100,6 +100,74 @@ function variavelComposta6() {
         variavelComposta.push(numero)
     }
 
+    variavelComposta = variavelComposta.slice(4);
     variavelComposta.sort();
-    alert(variavelComposta.shift());
+    alert(variavelComposta);
+}
+
+function variavelComposta7() {
+    let variavelComposta = [], numero;
+    for (let i = 0; i < 6; i++) {
+        numero = prompt("Informe um número entre 1 a 10");
+        while (numero < 1 || numero > 10) {
+            numero = prompt("Informe um número entre 1 a 10");
+        }
+        variavelComposta.push(numero)
+    }
+
+    if (variavelComposta.indexOf("5") != -1) {
+        alert("Número 5 encontrado!");
+    } else {
+        alert("Número 5 não encontrado!");
+    }
+}
+
+function variavelComposta8 () {
+    let nomes = [], numeros = [], numero, nome;
+    for (let i = 0; i < 4; i++) {
+        numero = prompt("Informe um nome");
+        numeros.push(numero);
+    }
+
+    for (let i = 0; i < 4; i++) {
+        nome = prompt("Informe um número");
+        nomes.push(nome);
+    }
+
+    alert(nomes.concat(numeros));
+}
+
+function variavelComposta9() {
+    let variavelComposta = [], numero;
+    for (let i = 0; i < 6; i++) {
+        numero = prompt("Informe um número entre 1 a 10");
+        while (numero < 1 || numero > 10) {
+            numero = prompt("Informe um número entre 1 a 10");
+        }
+        variavelComposta.push(numero)
+    }
+
+    alert(variavelComposta);
+    variavelComposta.pop();
+    variavelComposta.shift();
+    variavelComposta.unshift("2");
+    variavelComposta.push("8");
+    variavelComposta[3] = "6";
+
+    alert("Variavel composta atualizada: " + variavelComposta);
+}
+
+function variavelComposta10() {
+    let nome = prompt("Informe seu nome");
+    let sobrenome = prompt("Informe seu sobrenome");
+    let cpf = prompt("Informe seu cpf");
+
+    let object = {}, variavelComposta = [];
+    object.nome = nome;
+    object.sobrenome = sobrenome;
+    object.cpf = cpf;
+
+    variavelComposta.push(object);
+
+    alert("nome: " + variavelComposta[0].nome + "\nSobrenome: " + variavelComposta[0].sobrenome + "\nCPF: " + variavelComposta[0].cpf);
 }
