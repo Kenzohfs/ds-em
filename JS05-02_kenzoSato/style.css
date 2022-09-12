@@ -1,0 +1,27 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    width: 20%;
+}
+
+#containerInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastrar {
+    border: none;
+    background-color: rgb(77, 77, 216);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}

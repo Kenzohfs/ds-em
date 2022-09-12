@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS05 Atividade 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h2>Voluntário</h2>
+        <div id="containerInputs">
+            <label for="nome">
+                Nome:
+                <input id="nome" type="text" placeholder="Nome">
+            </label>
+            <label for="idade">
+                Idade:
+                <input id="idade" type="number" placeholder="Idade">
+            </label>
+            <label for="peso">
+                Peso:
+                <input id="peso" type="number" placeholder="Peso">
+            </label>
+            <label for="alimentado">
+                Você está bem alimentado?
+                <select id="alimentado">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </label>
+            <label for="resfriado">
+                Você está resfriado?
+                <select id="resfriado">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </label>
+            <button id="cadastrar" onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
