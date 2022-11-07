@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <a href="/">Página Principal</a>
+    <div id="container-formulario" style="display: flex; flex-direction: column; width: 200px;">
+        <form id="formulario" action="/cadastro" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+            <br>
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+            <br>
+            <label for="nascimento">Nascimento</label>
+            <input type="date" id="emnascimentoail" name="nascimento" required>
+            <br>
+            <label for="cep">CEP</label>
+            <input id="cep" type="text" name="cep" required>
+            <br>
+            <label for="logradouro">Rua</label>
+            <input type="text" name="logradouro" id="logradouro">
+            <br>
+            <label for="numero">Número</label>
+            <input type="text" name="numero" id="numero">
+            <br>
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+            <br>
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro">
+            <br>
+            <label for="localidade">Cidade</label>
+            <input type="text" name="localidade" id="localidade">
+            <br>
+            <label for="uf">Estado</label>
+            <input type="text" name="uf" id="uf">
+            <br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
