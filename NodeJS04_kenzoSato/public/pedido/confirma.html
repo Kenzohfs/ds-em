@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo-getpizza.png">
+    <link rel="stylesheet" href="../css/confirma.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Confirmação</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoPizzaria" src="../imagens/logo-getpizza.png">
+    </header>
+    <nav>
+        <a href="/">Dados Pessoais</a>
+        <a href="/size">Tamanho</a>
+        <a href="/flavours">Sabores</a>
+        <a href="/additionals">Adicionais</a>
+        <a href="/delivery">Entrega e Pagamento</a>
+        <a href="/confirmation" style="text-decoration: underline;">Confirmação</a>
+    </nav>
+    <main>
+        <div class="divPrincipal">
+            <div class="divMenor">
+                <h4>Dados do Cliente</h4>
+                <div class="dadoCliente">
+                    <span class="spanLabel">Nome:</span>
+                    <span id="nomeCliente" class="spanDado"></span>
+                </div>
+                <div class="dadoCliente">
+                    <span class="spanLabel">CPF:</span>
+                    <span id="cpfCliente" class="spanDado"></span>
+                </div>
+                <div class="dadoCliente">
+                    <span class="spanLabel">Email:</span>
+                    <span id="emailCliente" class="spanDado"></span>
+                </div>
+                <div class="dadoCliente">
+                    <span class="spanLabel">Telefone:</span>
+                    <span id="telefoneCliente" class="spanDado"></span>
+                </div>
+                <div class="dadoCliente">
+                    <span class="spanLabel">Forma de Pagamento:</span>
+                    <span id="formaPagamentoCliente" class="spanDado"></span>
+                </div>
+            </div>
+            <div class="divMenor dividirResumo">
+                <div id="resumo">
+                    <h4 class="title-resumo">Sabores</h4>
+                    <ul id="sabores">
+                    </ul>
+                    <h5 class="espacoItemLista title-subtotal">Subtotal: <span id="subtotalSabores"></span></h5>
+                    <h4 class="title-resumo">Adicionais</h4>
+                    <ul id="adicionais">
+                    </ul>
+                    <h4 class="title-resumo">Entrega</h4>
+                    <div id="entrega">
+                    </div>
+                    <h4 class="title-resumo">Total</h4>
+                    <h5 id="totalPedido"></h5>
+                </div>
+                <div class="divBotoesConfirma">
+                    <button onclick="cancelarPedido()" class="cancelar">Cancelar</button>
+                    <button onclick="confirmarPedido()" class="confirmar">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../index.js"></script>
+    <script src="../confirma.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo-getpizza.png">
+    <link rel="stylesheet" href="../css/entrega.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Entrega</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoPizzaria" src="../imagens/logo-getpizza.png">
+    </header>
+    <nav>
+        <a href="/">Dados Pessoais</a>
+        <a href="/size">Tamanho</a>
+        <a href="/flavours">Sabores</a>
+        <a href="/additionals">Adicionais</h4>
+            <a href="/delivery" style="text-decoration: underline;">Entrega e Pagamento</a>
+            <a href="/confirmation">Confirmação</a>
+    </nav>
+    <main>
+        <div id="container">
+            <div id="headForm">
+                <h2>Forma de Envio</h2>
+                <button onclick="avancarForms(6)" class="botaoProximo">Próximo</button>
+            </div>
+            <div id="divForm">
+                <input id="checkboxEntrega" type="radio" name="radioEntrega">
+                <label for="checkboxEntrega">Entrega - R$ 5,00</label>
+                <div class="divDoisInputs">
+                    <div class="input">
+                        <label for="cep">CEP:</label>
+                        <input class="inputTexto" type="text" id="cep">
+                    </div>
+                    <div class="input">
+                        <label for="cidade">Cidade:</label>
+                        <input class="inputTexto" type="text" id="localidade">
+                    </div>
+                </div>
+                <div class="divDoisInputs">
+                    <div class="input">
+                        <label for="endereco">Rua:</label>
+                        <input class="inputTexto" type="text" id="logradouro">
+                    </div>
+                    <div class="input">
+                        <label for="estado">Estado:</label>
+                        <input class="inputTexto" type="text" id="uf">
+                    </div>
+                </div>
+                <div class="divDoisInputs">
+                    <div class="input">
+                        <label for="numero">Número:</label>
+                        <input class="inputTexto" type="text" id="numero">
+                    </div>
+                    <div class="input">
+                        <label for="complemento">Complemento:</label>
+                        <input class="inputTexto" type="text" id="complemento">
+                    </div>
+                </div>
+                <div class="divDoisInputs">
+                    <div class="input">
+                        <label for="bairro">Bairro:</label>
+                        <input class="inputTexto" type="text" id="bairro">
+                    </div>
+                </div>
+                <input id="retiradaEntrega" type="radio" name="radioEntrega">
+                <label for="retiradaEntrega">Retirada no Balcão - R$ 0,00</label>
+            </div>
+            <div id="headForm" style="margin-top: 40px;">
+                <h2>Forma de Pagamento</h2>
+            </div>
+            <div id="conteudo">
+                <div id="pag1" onclick="selecionarPagamento('pag1')" class="quadradoPagamento"
+                    aria-valuetext='{"pagamento": "Boleto Bancário"}'>
+                    <img class="imgPagamento" src="../imagens/boleto.png" alt="Boleto">
+                    <span>Boleto Bancário</span>
+                </div>
+                <div id="pag2" onclick="selecionarPagamento('pag2')" class="quadradoPagamento"
+                    aria-valuetext='{"pagamento": "PIX"}'>
+                    <img class="imgPagamento" src="../imagens/pix.png" alt="PIX">
+                    <span>PIX</span>
+                </div>
+                <div id="pag3" onclick="selecionarPagamento('pag3')" class="quadradoPagamento"
+                    aria-valuetext='{"pagamento": "Cartão de Crédito"}'>
+                    <img class="imgPagamento" src="../imagens/cartao.png" alt="Cartão de Crédito">
+                    <span>Cartão de Crédito</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../index.js"></script>
+    <script src="../entrega.js"></script>
+</body>
+
+</html>
