@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/consulta_produtos.css">
+    <title>Consulta Produtos</title>
+</head>
+
+<body>
+    <div id="modal-update">
+        <div id="modal-conteudo">
+            <div id="modal-header">
+                <h2>Atualizar Produto</h2>
+            </div>
+            <div id="modal-body">
+                <input hidden id="cod_barras-input" name="cod_barras" type="text">
+                <div class="container-form">
+                    <label for="nome">Nome</label>
+                    <input class="input-form" type="text" name="nome" id="nome">
+                </div>
+                <div class="container-form">
+                    <label for="preco">Preço</label>
+                    <input class="input-form" type="number" name="preco" id="preco">
+                </div>
+                <div class="container-form">
+                    <label for="quantidade">Quantidade</label>
+                    <input class="input-form" type="number" name="quantidade" id="quantidade">
+                </div>
+                <div class="container-form">
+                    <label for="tipo">Tipo</label>
+                    <select class="input-form" name="tipo" id="tipo">
+                        <option value="ADICIONAL">Adicional</option>
+                        <option value="BEBIDA">Bebida</option>
+                    </select>
+                </div>
+                <button class="update-btn" onclick="udpate()">Atualizar</button>
+            </div>
+        </div>
+    </div>
+    <button id="btnConsulta">Consultar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Código de barras</th>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 0.5rem 1rem;
+        }
+    </style>
+    <script src="../consultaProdutos.js"></script>
+</body>
+
+</html>

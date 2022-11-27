@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divPrincipal {
+    margin-top: 30px;
+    width: 80vw;
+    min-height: 55vh;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 2% 3%;
+}
+
+#headForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #6C12FC;
+    font-family: 'Inter';
+}
+
+.divInputs {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.inputDados {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: #EA1D2C 8px solid;
+    border-radius: 4px;
+    min-height: 35px;
+    padding-left: 10px;
+    outline: none;
+}
+
+.botaoProximo {
+    background-color: #6C12FC;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-family: 'Inter';
+    margin-right: 7%;
+    float: right;
+    border: 1px solid transparent;
+    color: white;
+    bottom: 0px;
+}
+
+.botaoProximo:hover {
+    cursor: pointer;
+}

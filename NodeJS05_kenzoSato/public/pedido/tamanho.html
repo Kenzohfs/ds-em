@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imagens/logo-getpizza.png">
+    <link rel="stylesheet" href="../css/tamanho.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Tamanho</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoPizzaria" src="../imagens/logo-getpizza.png">
+    </header>
+    <nav>
+        <a href="/">Dados Pessoais</a>
+        <a href="/size" style="text-decoration: underline;">Tamanho</a>
+        <a href="/flavours">Sabores</a>
+        <a href="/additionals">Adicionais</h4>
+        <a href="/delivery">Entrega e Pagamento</a>
+        <a href="/confirmation">Confirmação</a>
+    </nav>
+    <main>
+        <div id="container">
+            <div id="headForm">
+                <h2>Tamanho da Pizza</h2>
+                <button onclick="avancarForms(3)" class="botaoProximo">Próximo</button>
+            </div>
+            <div id="conteudo">
+                <div id="1" class="tamanho" aria-valuetext='{"tamanho": "pequeno", "qtdsabores": 2, "preco": 39.99}'
+                    onclick="selecionarTamanho(1)">
+                    <p class="title-tamanho">Pequeno</p>
+                    <div class="deatlhes-tamanho">
+                        <p>2 Sabores</p>
+                        <p>R$ 39,99</p>
+                    </div>
+                </div>
+
+                <div id="2" class="tamanho" aria-valuetext='{"tamanho": "pequeno", "qtdsabores": 3, "preco": 59.99}'
+                    onclick="selecionarTamanho(2)">
+                    <p class="title-tamanho">Médio</p>
+                    <div class="deatlhes-tamanho">
+                        <p>3 Sabores</p>
+                        <p>R$ 59,99</p>
+                    </div>
+                </div>
+
+                <div id="3" class="tamanho" aria-valuetext='{"tamanho": "pequeno", "qtdsabores": 4, "preco": 79.99}'
+                    onclick="selecionarTamanho(3)">
+                    <p class="title-tamanho">Grande</p>
+                    <div class="deatlhes-tamanho">
+                        <p>4 Sabores</p>
+                        <p>R$ 79,99</p>
+                    </div>
+                </div>
+
+                <div id="4" class="tamanho" aria-valuetext='{"tamanho": "pequeno", "qtdsabores": 5, "preco": 99.99}'
+                    onclick="selecionarTamanho(4)">
+                    <p class="title-tamanho">Gigante</p>
+                    <div class="deatlhes-tamanho">
+                        <p>5 Sabores</p>
+                        <p>R$ 99,99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../index.js"></script>
+</body>
+
+</html>

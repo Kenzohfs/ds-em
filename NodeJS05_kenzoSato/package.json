@@ -1,0 +1,27 @@
+{
+  "name": "getpizza",
+  "version": "1.0.0",
+  "description": "Atividade proposta pelo professor Luciano Moreira no curso técnico de Desenvolvimento de Sistemas integrado ao Ensino Médio SESI SENAI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kenzohfs/GetPizza.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kenzohfs/GetPizza/issues"
+  },
+  "homepage": "https://github.com/Kenzohfs/GetPizza#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20"
+  }
+}
