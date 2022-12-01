@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const sql = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '789804hideaky',
+    password: 'root',
     port: 3306,
     database: 'GetPizza'
 })
